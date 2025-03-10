@@ -7,71 +7,70 @@
 
         <!-- Search Bar -->
         <div class="hidden md:flex items-center bg-gray-100 px-2 py-1 rounded-full w-96 shadow-sm hover:shadow-md transition-shadow duration-300">
-    <input type="text" 
-           placeholder="Search products.." 
-           class="bg-transparent py-1 w-full text-gray-700 placeholder-gray-500 border-none outline-none focus:ring-0">
-    <button class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors duration-300">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[20px] h-[20px]">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z" />
-        </svg>
-    </button>
-</div>
+            <input type="text" 
+                   placeholder="Search products.." 
+                   class="bg-transparent py-1 w-full text-gray-700 placeholder-gray-500 border-none outline-none focus:ring-0">
+            <button class="bg-primary text-white p-3 rounded-full hover:bg-secondary transition-colors duration-300">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-[20px] h-[20px]">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m1.35-5.65a7 7 0 11-14 0 7 7 0 0114 0z" />
+                </svg>
+            </button>
+        </div>
+<!-- Navigation Links -->
+<nav class="hidden md:flex space-x-6 text-secondary font-medium">
+    <a href="{{ route('home') }}" class="hover:text-primary transition-colors duration-300">Home</a>
 
 
- <!-- Navigation Links -->
- <nav class="hidden md:flex space-x-6 text-secondary font-medium">
-            <a href="{{ route('home') }}" class="hover:text-primary transition-colors duration-300">Home</a>
+        <!-- About Us Link -->
+        <a href="{{ route('about-us') }}" class="hover:text-primary transition-colors duration-300">About Us</a>
 
-            <!-- Products Mega Menu -->
-            <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
-                <a href="{{ route('products') }}" 
-                   class="hover:text-primary transition-colors duration-300 flex items-center space-x-2"
-                   @click="open = false">
-                    <span>Products</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-                    </svg>
-                </a>
 
-                <div x-show="open"
-                     x-transition:enter="transition ease-out duration-200"
-                     x-transition:enter-start="opacity-0 translate-y-2 scale-95"
-                     x-transition:enter-end="opacity-100 translate-y-0 scale-100"
-                     x-transition:leave="transition ease-in duration-150"
-                     x-transition:leave-start="opacity-100 translate-y-0 scale-100"
-                     x-transition:leave-end="opacity-0 translate-y-2 scale-95"
-                     class="absolute bg-white shadow-xl mt-4 py-6 px-8 rounded-lg w-[1000px] left-1/2 -translate-x-1/2 z-50">
-                    <div class="container mx-auto">
-                        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4">
-                            @foreach ($categories as $category)
-                                <div class="col-span-1">
-                                    <h3 class="text-lg font-semibold text-gray-800 mb-3">{{ $category['name'] }}</h3>
-                                    @foreach ($category['products'] as $product)
-                                        <a href="{{ route('products') }}" class="block hover:bg-gray-100 p-2 rounded-lg">
-                                            <div class="flex items-center space-x-3">
-                                                <img src="{{ asset('images/' . $product['image']) }}" alt="{{ $product['title'] }}" class="w-12 h-12 object-cover rounded-lg">
-                                                <div>
-                                                    <h4 class="text-sm font-semibold text-gray-800">{{ $product['title'] }}</h4>
-                                                    <p class="text-xs text-gray-600">{{ $product['description'] }}</p>
-                                                </div>
+    <!-- Products Mega Menu -->
+    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
+        <a href="{{ route('products.index') }}" 
+           class="hover:text-primary transition-colors duration-300 flex items-center space-x-2">
+            <span>Products</span>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </a>
+
+        <div x-show="open"
+             x-transition:enter="transition ease-out duration-200"
+             x-transition:enter-start="opacity-0 translate-y-2 scale-95"
+             x-transition:enter-end="opacity-100 translate-y-0 scale-100"
+             x-transition:leave="transition ease-in duration-150"
+             x-transition:leave-start="opacity-100 translate-y-0 scale-100"
+             x-transition:leave-end="opacity-0 translate-y-2 scale-95"
+             class="absolute bg-white shadow-xl mt-4 py-6 px-8 rounded-lg w-[1000px] left-1/2 -translate-x-1/2 z-50">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-4">
+                    @foreach ($categories as $category)
+                        <div class="col-span-1">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-3">{{ $category['name'] }}</h3>
+                            @foreach ($category['products'] as $product)
+                                @if (isset($product['id']))
+                                    <a href="{{ route('products.show', $product['id']) }}" class="block hover:bg-gray-100 p-2 rounded-lg">
+                                        <div class="flex items-center space-x-3">
+                                            <img src="{{ asset('images/' . $product['image']) }}" alt="{{ $product['title'] }}" class="w-12 h-12 object-cover rounded-lg">
+                                            <div>
+                                                <h4 class="text-sm font-semibold text-gray-800">{{ $product['title'] }}</h4>
+                                                <p class="text-xs text-gray-600">{{ $product['description'] }}</p>
                                             </div>
-                                        </a>
-                                    @endforeach
-                                </div>
+                                        </div>
+                                    </a>
+                                @endif
                             @endforeach
                         </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
+        </div>
+    </div>
 
-            <a href="{{ route('blog') }}" class="hover:text-primary transition-colors duration-300">Blog</a>
-            <a href="{{ route('contact') }}" class="hover:text-primary transition-colors duration-300">Contact Us</a>
-        </nav>
-
-
-
-        
-
+    <a href="{{ route('blog') }}" class="hover:text-primary transition-colors duration-300">Blog</a>
+    <a href="{{ route('contact') }}" class="hover:text-primary transition-colors duration-300">Contact Us</a>
+</nav>
 
 
 

@@ -3,7 +3,7 @@
 import Alpine from 'alpinejs';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
-// import 'swiper/css/lazy';
+
 
 
 window.Alpine = Alpine;
@@ -67,6 +67,33 @@ new Swiper("#category-swiper", {
 
 
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Initialize Swiper
+    new Swiper(".product-images-swiper", {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: ".swiper-button-next1",
+            prevEl: ".swiper-button-prev1",
+        },
+    });
+
+
+});
+
+
+
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     new Swiper('.testimonials-swiper', {
         loop: true,
@@ -123,7 +150,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
 
 
 

@@ -92,7 +92,7 @@ class DataController extends Controller
 
         $categories = [
             [
-                'name' => 'Smart Thermostats',
+                'name' => 'Smart Thermostats  frff',
                 'image' => 'smart-thermostats.png',
                 'products' => [
                     ['title' => 'EcoHeat 5000', 'description' => 'Energy-efficient heating.', 'image' => 'ecoheat-5000.jpeg'],
