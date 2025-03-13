@@ -1,6 +1,6 @@
 
 
-<section id="services-section" class="py-16 bg-gray-50">
+<section id="services-section" class="pt-10 pb-10 bg-gray-50">
     <div class="container mx-auto px-6 lg:px-12">
         <!-- Section Title -->
         <h2 class="text-3xl md:text-4xl font-normal text-center relative z-10">

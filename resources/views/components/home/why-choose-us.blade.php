@@ -1,4 +1,4 @@
-<section id="why-choose-us" class="py-16 bg-white">
+<section id="why-choose-us" class="pt-10 pb-10 bg-white">
     <div class="container mx-auto px-6 lg:px-12">
         <!-- Section Title -->
         <h2 class="text-3xl md:text-4xl font-normal text-center">

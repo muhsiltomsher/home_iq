@@ -1,5 +1,5 @@
 <section class="marquee-wrapper overflow-hidden">
-    <div class="marquee">
+    <div class="marquee overflow-hidden">
         <div class="marquee-content">
             <span>Smart Living, Simplified -</span>
             <span>Smart Living, Simplified -</span>
@@ -33,7 +33,7 @@
     overflow: hidden;
     background-color: white;
     padding: 20px 0;
-    width: 100vw;
+    width: 100%;
     white-space: nowrap;
     position: relative;
 }
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-<footer class="container-fluid mx-4 sm:mx-6 md:mx-10 mb-5 md:mb-10 bg-[#1F1F1F] text-white py-12 rounded-3xl overflow-hidden">
+<footer class="container-fluid mx-4 sm:mx-6 md:mx-8 mb-4 md:mb-10 bg-[#1F1F1F] text-white py-12 rounded-3xl overflow-hidden">
 
     <div class="mx-auto px-6 lg:px-12">
 
@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
         <!-- Middle Section: Contact & Links in One Row -->
-        <div class="grid grid-cols-2 lg:grid-cols-6 gap-8 mt-8 items-start">
+        <div class="grid grid-cols-2 lg:grid-cols-6 gap-4 mt-8 items-start">
             <!-- Contact & Address (Left Side) with Right Border -->
             <div class="col-span-1 border-r border-gray-600 pr-6">
                 <h3 class="text-gray-300 font-semibold text-sm">Contact Us</h3>

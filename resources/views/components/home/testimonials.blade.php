@@ -1,4 +1,4 @@
-<div class="py-12 bg-white">
+<div class="py-12 bg-gray-50">
     <div class="container mx-auto px-6 lg:px-12">
         <!-- Section Title -->
         <h2 class="text-3xl md:text-4xl font-normal text-center">
