@@ -23,60 +23,56 @@ class DataController extends Controller
         // Sample Services Data
         $services = [
             [
-                'id' => 1, 
-                'title' => 'Smart Door Lock', 
-                'subtitle' => 'Installation', 
-                'duration' => '60 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 1])
+                'id' => 1,
+                'title' => 'Smart Thermostats',
+                'subtitle' => 'Reduce energy consumption and save money.',
+                'description' => 'Did you know that your home’s air conditioners use up to 70% of your energy use? Using smart thermostats like Nest or Ecobee can cut your electricity bill by 20% to 35%. These thermostats learn your habits and automatically regulate temperature based on your schedule.',
+                'image' => 'smart-thermostat.jpg',
+                'price' => 500
             ],
             [
-                'id' => 2, 
-                'title' => 'Security Camera', 
-                'subtitle' => 'Installation', 
-                'duration' => '90 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 2])
+                'id' => 2,
+                'title' => 'Indoor & Outdoor Security Cameras',
+                'subtitle' => 'Advanced motion sensors for home security.',
+                'description' => 'Protect your home with our range of indoor and outdoor security cameras with built-in lights, night vision, siren alarm, and two-way audio. These cameras offer object and facial detection, along with solar, battery, or hardwired options.',
+                'image' => 'security-cameras.jpg',
+                'price' => 750
             ],
             [
-                'id' => 3, 
-                'title' => 'Video Doorbell', 
-                'subtitle' => 'Installation', 
-                'duration' => '60 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 3])
+                'id' => 3,
+                'title' => 'AC Service & Maintenance',
+                'subtitle' => 'Ensure your air conditioning system runs efficiently.',
+                'description' => 'Regular AC maintenance helps your system perform better, reduces electricity bills, and extends its lifespan. Our services include filter replacement, coil cleaning, and full system checkups.',
+                'image' => 'ac-service.jpg',
+                'price' => 150
             ],
             [
-                'id' => 4, 
-                'title' => 'Smart Lighting', 
-                'subtitle' => 'Installation', 
-                'duration' => '60 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 4])
+                'id' => 4,
+                'title' => 'Smart Locks & Doorbells',
+                'subtitle' => 'Secure your home with advanced smart locks.',
+                'description' => 'See who’s at your door, grant time-limited access, and enjoy keyless entry with our smart lock and doorbell solutions. Monitor and control access from anywhere via your smartphone.',
+                'image' => 'smart-lock.jpg',
+                'price' => 300
             ],
             [
-                'id' => 5, 
-                'title' => 'WiFi & Smart Network', 
-                'subtitle' => 'Setup', 
-                'duration' => '45 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 5])
+                'id' => 5,
+                'title' => 'Annual Maintenance Contract',
+                'subtitle' => 'Comprehensive home service coverage.',
+                'description' => 'Our annual maintenance contract covers unforeseen repairs and ensures your home remains safe, clean, and comfortable. Prevent major costs and inconveniences with regular inspections and repairs.',
+                'image' => 'annual-maintenance.jpg',
+                'price' => 1200
             ],
             [
-                'id' => 6, 
-                'title' => 'Smart Blinds & Curtain', 
-                'subtitle' => 'Installation', 
-                'duration' => '90 min', 
-                'description' => 'Secure your home with a professionally installed smart door lock. Our experts ensure a seamless setup, integration with your smart home system, and guidance on usage.', 
-                'price' => 239, 
-                'link' => route('services.show', ['id' => 6])
-            ],
+                'id' => 6,
+                'title' => 'Smart Smoke Detectors',
+                'subtitle' => 'Instant alerts for smoke and carbon monoxide.',
+                'description' => 'Smart smoke detectors send real-time alerts to your phone and notify you when battery levels are low. They provide voice alerts indicating the exact location of a fire hazard, enhancing home safety.',
+                'image' => 'smoke-detector.jpg',
+                'price' => 180
+            ]
         ];
+        
+        // return view('pages.services', compact('services'));
         
 
         // Sample Categories Data

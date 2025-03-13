@@ -3,7 +3,7 @@
 @section('title', 'Blog - HOME_IQ')
 
 @section('content')
-    <div class="container mx-auto py-12 px-6 lg:px-12">
+    <div class="container mx-auto lg:py-12 px-6 lg:px-12">
         <!-- Section Title -->
         <h2 class="text-3xl md:text-4xl font-semibold text-center">
             Latest <span class="text-[#41B6E8]">Blog Posts</span>

@@ -37,4 +37,5 @@
 
     {{-- ✅ JavaScript --}}
     <script type="module" src="{{ mix('js/app.js') }}"></script>
+    
 @endsection

@@ -9,22 +9,63 @@ class ProductsController extends Controller
     private $products = [
         [
             'id' => '001',
-            'name' => 'Google Nest Learning Thermostat 4th Gen with sensor',
+            'name' => 'Google Nest Learning Thermostat 4th Gen with Sensor',
+            'model_number' => 'GA05169-US',
             'price' => 239,
             'images' => ['ecoheat-5000.jpeg', 'ecoheat-5000.jpeg', 'ecoheat-5000.jpeg', 'p1.webp', 'p2.webp', 'p3.webp'],
             'category' => 'Climate Control',
             'discount' => '10%',
-            'description' => 'A high-performance heating solution for your home.',
-            'weight' => '5 kg',
-            'dimensions' => '30 x 20 x 10 cm',
-            'color_options' => 'White, Black',
+            'short_description' => 'Take control of your home with Nest’s Learning Thermostat. Enjoy personalized comfort and savings with minimum effort.',
+        
+            'description' => 'The Smart Schedule adapts to your preferred temperatures and timing, offering personalized adjustments to help you save energy—all conveniently managed through the Google Home app.
+        
+            Natural heating and cooling help conserve energy by understanding how external temperatures affect your home—like how it warms up on sunny days.
+        
+            Adaptive Eco discovers the perfect energy-efficient temperature for your home, saving energy while you’re away and ensuring comfort when you return.
+        
+            The Nest Learning Thermostat can help save an average of 12% on heating bills and 15% on cooling bills.',
+        
+            'weight' => '0.35 lbs',
+            'dimensions' => 'Depth (in) 1.1, Display Height (in) 2.7, Display Width (in) 2.7, Diameter (in) 3.9',
+            'color_options' => 'Polished Steel, Polished Gold, Polished Obsidian/Black',
             'material' => 'Metal',
-            'features' => ['Energy Efficient', 'Compact Design'],
-            'reviews' => [
-                ['text' => 'Great product! Works well.', 'author' => 'John Doe'],
-                ['text' => 'Easy to install.', 'author' => 'Jane Smith'],
+        
+            'key_features' => [
+                '2.7″ (600x600p) Diameter Circular Liquid Crystal Display',
+                'Remote Control With Apple Watch, Smartphone, Tablet, Or Laptop',
+                'Soli Sensor for Motion Sense, Temperature, Humidity, Ambient Light Sensors',
+                'HVAC System Wiring Power Source',
+                'Wi-Fi 802.11n (2.4 GHz / 5 GHz)',
+                'Bluetooth Low Energy (BLE)',
+                'Built-In Rechargeable Lithium-Ion Battery',
+                'Polished Obsidian/Black Finish',
             ],
+        
+            'technical_specs' => [
+                'Brand' => 'Google',
+                'Type' => 'Programmable Wifi Thermostat',
+                'Color' => 'Polished Steel, Polished Gold, Polished Obsidian/Black',
+                'Control Type' => 'Touch',
+                'Item Weight' => '0.35 lbs',
+                'Application' => 'Google Home',
+                'Voltage' => '24 Volts',
+                'Connectivity Protocol' => 'Wi-Fi 802.11n (2.4 GHz / 5 GHz)',
+                'Sensors' => 'Motion, Temperature, Humidity, Ambient Light',
+                'Model No.' => 'GA05169-US',
+                'Display Resolution' => '2.7" (600x600p) Diameter Circular Liquid Crystal Display',
+                'Power Source' => 'HVAC System Wiring',
+                'Supported Languages' => 'English, Spanish, French',
+                'Batteries' => 'Built-In Rechargeable Lithium-Ion Battery',
+                'Item Package Quantity' => '1',
+                'In the box' => 'Nest Learning Thermostat (4th gen), Thermostat base, Trim plate, Steel plate, Nest Temperature Sensor (2nd gen), Mounting screws and wiring labels',
+            ],
+        
+            'features' => ['Energy Efficient', 'Compact Design', 'Smart Scheduling', 'Remote Access', 'Eco Mode', 'Voice Control'],
+            
+            'categories' => ['Nest', 'Simple Products', 'Smart Thermostats'],
+    
         ],
+        
         [
             'id' => '002',
             'name' => 'ThermaSense X1',

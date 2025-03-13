@@ -30,12 +30,12 @@
         <a href="{{ route('products.index') }}" 
            class="hover:text-primary transition-colors duration-300 flex items-center space-x-2">
             <span>Products</span>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
-            </svg>
+            </svg> -->
         </a>
 
-        <div x-show="open"
+        <!-- <div x-show="open"
              x-transition:enter="transition ease-out duration-200"
              x-transition:enter-start="opacity-0 translate-y-2 scale-95"
              x-transition:enter-end="opacity-100 translate-y-0 scale-100"
@@ -65,8 +65,12 @@
                     @endforeach
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
+
+
+    <a href="{{ route('services.index') }}" class="hover:text-primary transition duration-300">Services</a>
+
 
     <a href="{{ route('blog') }}" class="hover:text-primary transition-colors duration-300">Blog</a>
     <a href="{{ route('contact') }}" class="hover:text-primary transition-colors duration-300">Contact Us</a>
