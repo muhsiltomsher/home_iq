@@ -14,15 +14,15 @@
         <!-- Sample Cart Items -->
         @php
             $cartItems = [
-                ['name' => 'Smart Lock', 'price' => '$199', 'quantity' => 1, 'image' => 'smart-locks.jpg'],
-                ['name' => 'Security Camera', 'price' => '$299', 'quantity' => 2, 'image' => 'security-cameras.jpg'],
-                ['name' => 'Smart Thermostat', 'price' => '$149', 'quantity' => 1, 'image' => 'thermostats.jpg'],
+                ['name' => 'Smart Lock', 'price' => '$199', 'quantity' => 1, 'image' => 'cooltech-x500.jpeg'],
+                ['name' => 'Security Camera', 'price' => '$299', 'quantity' => 2, 'image' => 'ecoheat-5000.jpeg'],
+                ['name' => 'Smart Thermostat', 'price' => '$149', 'quantity' => 1, 'image' => 'ecotemp-pro.jpeg'],
             ];
         @endphp
 
         @foreach ($cartItems as $item)
             <div class="flex items-center space-x-4">
-                <img src="{{ asset('images/' . $item['image']) }}" alt="{{ $item['name'] }}" 
+                <img src="{{ asset('images/products/' . $item['image']) }}" alt="{{ $item['name'] }}" 
                      class="w-16 h-16 object-cover rounded-lg shadow-sm">
                 <div class="flex-1">
                     <h4 class="text-gray-800 font-medium">{{ $item['name'] }}</h4>
