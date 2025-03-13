@@ -14,22 +14,22 @@
                 </div>
                 <!-- Slide 2 -->
                 <div class="swiper-slide flex justify-center items-center h-full">
-                    <img src="{{ asset('images/slider-2.jpeg') }}" 
-                         data-src="{{ asset('images/slider-2.jpeg') }}" 
+                    <img src="{{ asset('images/slider-2.jpg') }}" 
+                         data-src="{{ asset('images/slider-2.jpg') }}" 
                          class="swiper-lazy w-full h-full object-cover rounded-lg" 
                          alt="Smart Doorbell"
                          loading="lazy">
                     <div class="swiper-lazy-preloader"></div>
                 </div>
                 <!-- Slide 3 -->
-                <div class="swiper-slide flex justify-center items-center h-full">
+                <!-- <div class="swiper-slide flex justify-center items-center h-full">
                     <img src="{{ asset('images/slider-3.jpeg') }}" 
                          data-src="{{ asset('images/slider-3.jpeg') }}" 
                          class="swiper-lazy w-full h-full object-cover rounded-lg" 
                          alt="Smart Thermostat"
                          loading="lazy">
                     <div class="swiper-lazy-preloader"></div>
-                </div>
+                </div> -->
             </div>
 
             <!-- Pagination -->
