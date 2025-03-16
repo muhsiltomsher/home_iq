@@ -42,10 +42,18 @@
                         </span>
 
                         <div class="flex items-center space-x-2">
-                            <a href="{{ route('services.show', ['id' => $service['id']]) }}"
+                            <!-- <a href="{{ route('services.show', ['id' => $service['id']]) }}"
+                               class="px-4 py-2 text-sm font-medium text-gray-600 border border-gray-600 rounded-full transition duration-300 hover:bg-gray-800 hover:text-white">
+                                Learn More
+                            </a> -->
+
+
+                            <a href="#"
                                class="px-4 py-2 text-sm font-medium text-gray-600 border border-gray-600 rounded-full transition duration-300 hover:bg-gray-800 hover:text-white">
                                 Learn More
                             </a>
+
+
 
                             <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-[#41B6E8] transition duration-300">
                                 +
