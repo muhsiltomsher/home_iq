@@ -66,10 +66,18 @@
 
         <!-- View All Services Button -->
         <div class="mt-12 text-center">
-            <a href="{{ route('services.index') }}" 
+            <!-- <a href="{{ route('services.index') }}" 
+               class="px-6 py-3 bg-[#41B6E8] text-white font-semibold rounded-full hover:bg-[#3086B1] transition duration-300">
+                View All Services
+            </a> -->
+
+
+            <a href="#" 
                class="px-6 py-3 bg-[#41B6E8] text-white font-semibold rounded-full hover:bg-[#3086B1] transition duration-300">
                 View All Services
             </a>
+
+
         </div>
 
     </div>

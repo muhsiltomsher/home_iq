@@ -97,10 +97,17 @@
 
         <!-- View More Button -->
         <div class="mt-[40px] flex justify-center">
-        <a href="/products"
+
+        <a href="#"
    class="inline-block px-[30px] py-[12px] bg-black text-white rounded-full shadow-md hover:bg-[#41B6E8] transition duration-[300ms]">
    View More
 </a>
+
+<!-- 
+        <a href="/products"
+   class="inline-block px-[30px] py-[12px] bg-black text-white rounded-full shadow-md hover:bg-[#41B6E8] transition duration-[300ms]">
+   View More
+</a> -->
 
 
         </div>
