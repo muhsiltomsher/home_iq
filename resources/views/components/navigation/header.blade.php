@@ -22,18 +22,15 @@
 
 
         <!-- About Us Link -->
-        <a href="#" class="hover:text-primary transition-colors duration-300">About Us</a>
-        <!-- <a href="{{ route('about-us') }}" class="hover:text-primary transition-colors duration-300">About Us</a> -->
+        <a href="{{ route('about-us') }}" class="hover:text-primary transition-colors duration-300">About Us</a>
 
-
-        <a href="#" class="hover:text-primary transition-colors duration-300">Products</a>
 
     <!-- Products Mega Menu -->
-    <!-- <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
+    <div x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false" class="relative">
         <a href="{{ route('products.index') }}" 
            class="hover:text-primary transition-colors duration-300 flex items-center space-x-2">
-            <span>Products</span> -->
-            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viwBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
+            <span>Products</span>
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
             </svg> -->
         </a>
@@ -69,17 +66,14 @@
                 </div>
             </div>
         </div> -->
-    <!-- </div> -->
+    </div>
 
 
-    <a href="#" class="hover:text-primary transition duration-300">Services</a>
-    <!-- <a href="{{ route('services.index') }}" class="hover:text-primary transition duration-300">Services</a> -->
+    <a href="{{ route('services.index') }}" class="hover:text-primary transition duration-300">Services</a>
 
 
-    <a href="#" class="hover:text-primary transition-colors duration-300">Blog</a>
-    <!-- <a href="{{ route('blog') }}" class="hover:text-primary transition-colors duration-300">Blog</a> -->
-    <a href="#" class="hover:text-primary transition-colors duration-300">Contact Us</a>
-    <!-- <a href="{{ route('contact') }}" class="hover:text-primary transition-colors duration-300">Contact Us</a> -->
+    <a href="{{ route('blog') }}" class="hover:text-primary transition-colors duration-300">Blog</a>
+    <a href="{{ route('contact') }}" class="hover:text-primary transition-colors duration-300">Contact Us</a>
 </nav>
 
 
@@ -104,8 +98,7 @@
     </button>
 
     <!-- Login/Register Button -->
-    <!-- <a href="{{ route('login') }}"  -->
-    <a href="#" 
+    <a href="{{ route('login') }}" 
        class="bg-primary text-white w-[125px] h-[45px] flex justify-center items-center rounded-full hover:bg-[#3498db] transition-all duration-300 transform hover:scale-105 font-medium text-sm">
         Login/Register
     </a>

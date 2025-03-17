@@ -42,18 +42,10 @@
                         </span>
 
                         <div class="flex items-center space-x-2">
-                            <!-- <a href="{{ route('services.show', ['id' => $service['id']]) }}"
-                               class="px-4 py-2 text-sm font-medium text-gray-600 border border-gray-600 rounded-full transition duration-300 hover:bg-gray-800 hover:text-white">
-                                Learn More
-                            </a> -->
-
-
-                            <a href="#"
+                            <a href="{{ route('services.show', ['id' => $service['id']]) }}"
                                class="px-4 py-2 text-sm font-medium text-gray-600 border border-gray-600 rounded-full transition duration-300 hover:bg-gray-800 hover:text-white">
                                 Learn More
                             </a>
-
-
 
                             <button class="w-8 h-8 rounded-full bg-gray-800 text-white flex items-center justify-center hover:bg-[#41B6E8] transition duration-300">
                                 +
@@ -74,18 +66,10 @@
 
         <!-- View All Services Button -->
         <div class="mt-12 text-center">
-            <!-- <a href="{{ route('services.index') }}" 
-               class="px-6 py-3 bg-[#41B6E8] text-white font-semibold rounded-full hover:bg-[#3086B1] transition duration-300">
-                View All Services
-            </a> -->
-
-
-            <a href="#" 
+            <a href="{{ route('services.index') }}" 
                class="px-6 py-3 bg-[#41B6E8] text-white font-semibold rounded-full hover:bg-[#3086B1] transition duration-300">
                 View All Services
             </a>
-
-
         </div>
 
     </div>

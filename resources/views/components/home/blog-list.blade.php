@@ -43,15 +43,9 @@
 
         <!-- View All Blogs Button -->
         <div class="mt-8 flex justify-center">
-
-        <a href="#" class="px-6 py-3 bg-black text-white rounded-full text-sm hover:bg-gray-800 transition-all">
+            <a href="{{ route('blog') }}" class="px-6 py-3 bg-black text-white rounded-full text-sm hover:bg-gray-800 transition-all">
                 View All Blogs
             </a>
-
-
-            <!-- <a href="{{ route('blog') }}" class="px-6 py-3 bg-black text-white rounded-full text-sm hover:bg-gray-800 transition-all">
-                View All Blogs
-            </a> -->
         </div>
     </div>
 </div>
