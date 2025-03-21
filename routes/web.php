@@ -42,6 +42,18 @@ Route::view('/contact', 'pages.contact')->name('contact');
 Route::view('/packages', 'pages.packages')->name('packages');
 Route::view('/why-choose-us', 'pages.why-choose-us')->name('why-choose-us');
 
+
+Route::view('/faq', 'pages.faq')->name('faq');
+Route::view('/terms-conditions', 'pages.terms-conditions')->name('terms-conditions');
+Route::view('/return-policy', 'pages.return-policy')->name('return-policy');
+Route::view('/privacy-policy', 'pages.privacy-policy')->name('privacy-policy');
+Route::view('/login-page', 'pages.login-page')->name('login-page');
+Route::view('/register-page', 'pages.register-page')->name('register-page');
+Route::view('/forgot-password-page', 'pages.forgot-password-page')->name('forgot-password-page');
+Route::view('/brand-listing', 'pages.brand-listing')->name('brand-listing');
+Route::view('/wishlist', 'pages.wishlist')->name('wishlist');
+Route::view('/cart', 'pages.cart')->name('cart');
+
 // ✅ Dashboard & Profile Routes (Authenticated Users Only)
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::view('/dashboard', 'dashboard')->name('dashboard');
