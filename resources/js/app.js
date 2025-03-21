@@ -166,3 +166,20 @@ function toggleFAQ(id, btn) {
     }
 }
 
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const checkbox = document.getElementById('different-address-checkbox');
+    const differentAddressFields = document.getElementById('different-address');
+
+    // Initially hide the different address fields
+    differentAddressFields.classList.add('hidden');
+
+    checkbox.addEventListener('change', function () {
+        if (this.checked) {
+            differentAddressFields.classList.remove('hidden');
+        } else {
+            differentAddressFields.classList.add('hidden');
+        }
+    });
+});

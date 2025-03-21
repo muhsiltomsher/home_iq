@@ -53,6 +53,13 @@ Route::view('/forgot-password-page', 'pages.forgot-password-page')->name('forgot
 Route::view('/brand-listing', 'pages.brand-listing')->name('brand-listing');
 Route::view('/wishlist', 'pages.wishlist')->name('wishlist');
 Route::view('/cart', 'pages.cart')->name('cart');
+Route::view('/checkout', 'pages.checkout')->name('checkout');
+Route::view('/account', 'pages.account')->name('account');
+Route::view('/order-details', 'pages.order-details')->name('order-details');
+
+
+
+
 
 // ✅ Dashboard & Profile Routes (Authenticated Users Only)
 Route::middleware(['auth', 'verified'])->group(function () {
