@@ -54,8 +54,13 @@ Route::view('/brand-listing', 'pages.brand-listing')->name('brand-listing');
 Route::view('/wishlist', 'pages.wishlist')->name('wishlist');
 Route::view('/cart', 'pages.cart')->name('cart');
 Route::view('/checkout', 'pages.checkout')->name('checkout');
-Route::view('/account', 'pages.account')->name('account');
+Route::view('/my-address', 'pages.my-address')->name('my-address');
+Route::view('/my-orders', 'pages.my-orders')->name('my-orders');
 Route::view('/order-details', 'pages.order-details')->name('order-details');
+Route::view('/order-success', 'pages.order-success')->name('order-success');
+Route::view('/order-field', 'pages.order-field')->name('order-field');
+
+
 
 
 

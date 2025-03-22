@@ -98,7 +98,7 @@
     </button>
 
     <!-- Login/Register Button -->
-    <a href="{{ route('login') }}" 
+    <a id="accont-btn" href="#" 
        class="bg-primary text-white w-[125px] h-[45px] flex justify-center items-center rounded-full hover:bg-[#3498db] transition-all duration-300 transform hover:scale-105 font-medium text-sm">
         Login/Register
     </a>
@@ -113,4 +113,5 @@
 
 
         <x-cart-drawer />
+        <x-account-drawer />
     </header>
